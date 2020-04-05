@@ -5,7 +5,7 @@ files:
   visible: true
   placeholders:
   - offset: 82
-    length: 6
+    length: 19
     placeholder_text: TODO()
     initial_state:
       length: 6
@@ -13,7 +13,7 @@ files:
     initialized_from_dependency: false
     possible_answer: date in first..last
     selected: false
-    status: Unchecked
+    status: Solved
   text: |
     fun checkInRange(date: MyDate, first: MyDate, last: MyDate): Boolean {
         return TODO()
@@ -58,5 +58,5 @@ files:
         }
     }
   learner_created: false
-status: Unchecked
+status: Solved
 record: -1
