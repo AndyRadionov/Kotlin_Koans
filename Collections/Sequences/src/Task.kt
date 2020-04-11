@@ -1,5 +1,3 @@
-import com.sun.tools.corba.se.idl.constExpr.Or
-
 // Find the most expensive product among all the delivered products
 // ordered by the customer. Use `Order.isDelivered` flag.
 fun findMostExpensiveProductBy(customer: Customer): Product? =
@@ -13,7 +11,7 @@ fun findMostExpensiveProductBy(customer: Customer): Product? =
 // Note that a customer may order the same product several times.
 fun Shop.getNumberOfTimesProductWasOrdered(product: Product): Int =
     customers.asSequence()
-            .flatMap { it.getOrderedProducts() }
+            .flatMap(Customer::getOrderedProducts)
             .count { it == product }
 
 fun Customer.getOrderedProducts(): Sequence<Product> =
