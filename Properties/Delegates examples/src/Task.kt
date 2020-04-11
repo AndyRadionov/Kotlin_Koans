@@ -1,4 +1,4 @@
-class LazyProperty(val initializer: () -> Int) {
-    val lazyValue: Int by TODO()
+class LazyProperty(initializer: () -> Int) {
+    val lazyValue: Int by lazy(initializer)
 }
 
